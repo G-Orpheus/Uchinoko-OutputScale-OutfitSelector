@@ -1,0 +1,38 @@
+﻿DiveToPalworld本体は MIT License(LICENSE参照)です。
+
+以下のコンポーネントはGPLv3+ (GNU General Public License v3 or later) であり、
+本体からは常にsubprocess経由でのみ起動されます(importもリンクもしない、
+"mere aggregation"構成。ffmpeg.exe等の外部実行ファイルをMITツールが
+subprocessで呼ぶのと同じ扱いです)。
+
+1. pipeline\py\ooz_worker_gpl.py
+   本体からpyoozを呼び出すための単独完結した別プロセス実行体。
+   ライセンス: GPLv3 (ファイル冒頭のヘッダ参照)
+
+2. pyooz (初回起動時にダウンロードするBlenderの
+   python\lib\site-packages\ooz.pyd等へ配置。差し込み素材そのものは
+   assets\blender_patch\ooz.pyd に小容量で同梱)
+   Oodle互換解凍ライブラリoozのPythonバインディング。
+   配布元: https://pypi.org/project/pyooz/ (https://github.com/zao/pyooz)
+   ライセンス: GPLv3+ (GNU General Public License v3 or later)
+
+GPLv3全文: https://www.gnu.org/licenses/gpl-3.0.txt
+
+Blender Portable(GPL、公式配布に GPL-3.0-or-later.txt / GPL-2.0-or-later.txt 同梱)は
+この配布物(zip)には含まれません。初回起動時にツールが公式サイト
+(https://www.blender.org/download/) から自動的にダウンロードし、
+assets\tools\ に配置します(SHA256をピン留めして照合。
+pipeline\cli\ensure_blender.ps1 参照)。
+
+python3.dll(初回起動時にダウンロードするBlenderの
+python\bin\python3.dll へ配置。差し込み素材そのものは
+assets\blender_patch\python3.dll に同梱)は
+CPython公式配布物の一部(PSFライセンス)です。 https://www.python.org/
+
+vcruntime140.dll / vcruntime140_1.dll / msvcp140.dll(初回起動時にダウンロードする
+Blenderのpython\bin\および python\lib\site-packages\に配置)はMicrosoft Visual
+C++ Redistributableの一部です。この配布物(zip)には含まれません。新規に追加
+するものではなく、初回起動時にダウンロードするBlenderポータブル本体
+(blender.crt\)が元々再頒布している実体を、そのまま複製配置するだけです
+(2026-07-26追加、Windows Sandboxでのpython.exe起動失敗対策。u54でBlender
+本体の取得タイミングが変わった後も複製元・複製内容は不変)。

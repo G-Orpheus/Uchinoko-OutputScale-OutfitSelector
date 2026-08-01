@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "note": "Bundled compatibility list used to suppress false-positive Palworld version-mismatch warnings. 'known_versions' is the fast fingerprint path (Steam buildid + Pal-Windows.pak size, no pak content read, checked at every GUI startup). 'known_vanilla_manifest_sha256' is the self-judgment path: the combined_hash from extract_vanilla.py's vanilla_manifest.json (sha256 over the small extracted output set, not the full pak). Compatibility data is read only from this bundled file and is never extended over the network.",
+  "known_versions": [
+    {"build_id": "24181527", "pak_size": 40526106335, "label": "1.0.1"},
+    {"build_id": "24370881", "pak_size": 40525057755, "label": "1.0.2.100933"}
+  ],
+  "known_vanilla_manifest_sha256": [
+    "78a62c16c0dda028e9a3d013de9306077dea3ddbba035ed2355be62be972ffe5"
+  ]
+}

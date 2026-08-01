@@ -1,0 +1,32 @@
+Base: Uchinoko-2.2.11 custom source corresponding to
+Uchinoko_for_Palworld_v2.0.0_full_multi-avatar-assets
+
+Code/build:
+app/DiveToPalworld.cs
+app/AssemblyInfo.cs
+app/build_app.ps1
+build/make_dist.ps1
+pipeline/cli/convert.ps1
+pipeline/cli/ensure_blender.ps1
+pipeline/py/known_good_palworld.json
+pipeline/py/live_template.py
+pipeline/py/extract_vanilla.py
+pipeline/py/dep_resolver.py
+pipeline/py/path_privacy.py
+pipeline/py/vp_core.py
+pipeline/py/dump_avatar_mesh.py
+pipeline/py/preflight_pak.py
+
+Documentation/distribution metadata:
+README.md
+README.en.md
+manual/manual.md
+manual/manual.en.md
+manual/manual.html
+SECURITY.md
+PRIVACY.md
+PRIVACY.en.md
+PROVENANCE_NOUE_ASSETS.md
+THIRD_PARTY_NOTICES.md
+third_party/SOURCES.md
+third_party/pyooz-0.0.8-source/NOTICE.md
