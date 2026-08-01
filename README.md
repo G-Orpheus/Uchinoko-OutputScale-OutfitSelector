@@ -5,7 +5,7 @@ Uchinoko 2.2.13を基に、複数アバター運用と防具単位の切り替�
 
 > [!IMPORTANT]
 > この配布物は非公式改変版です。元作者および元リポジトリの公式サポート対象ではありません。
-> 本改変版の問題を元作者へ報告しないでください。問題報告は[改変版GitHub Issues](https://github.com/Guldin-Orpheus/Uchinoko-OutputScale-OutfitSelector/issues)へお願いします。
+> 本改変版の問題を元作者へ報告しないでください。問題報告は本リポジトリの[GitHub Issues](https://github.com/G-Orpheus/Uchinoko-OutputScale-OutfitSelector/issues)へお願いします。
 
 ## 主な改変機能
 
