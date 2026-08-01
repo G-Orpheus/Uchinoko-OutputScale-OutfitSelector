@@ -1,7 +1,7 @@
 # Uchinoko for Palworld 非公式改変版
 
 VRMアバターをPalworldのプレイヤー用MODへ変換するWindows向けツールです。
-Uchinoko 2.2.13を基に、複数アバター運用と防具単位の切り替えに対応する独自改修を加えています。
+[pandrabox/Uchinoko](https://github.com/pandrabox/Uchinoko) v2.2.13を基に、複数アバター運用と防具単位の切り替えに対応する独自改修を加えています。
 
 > [!IMPORTANT]
 > この配布物は非公式改変版です。元作者および元リポジトリの公式サポート対象ではありません。
